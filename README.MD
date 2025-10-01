@@ -1,95 +1,84 @@
-# Projeto de Lógica de Programação II
+# Sistema de Análise de E-commerce
 
-## Descrição
+Sistema completo de análise de dados de vendas online desenvolvido como projeto da disciplina **Lógica de Programação II** da ADA Tech.
 
-Este projeto foi desenvolvido como parte da disciplina **Lógica de Programação II** e tem como objetivo aplicar conceitos fundamentais de programação Python através da implementação de um sistema de análise de dados.
+## ✨ Funcionalidades
 
-## Objetivos do Projeto
+- **📊 Carregamento automático** de dataset do Kaggle
+- **🔍 CRUD completo** em memória (Create, Read, Update, Delete)
+- **📈 Relatórios e análises** (médias, rankings, filtros)
+- **💾 Exportação CSV** de dados e relatórios
+- **⚠️ Tratamento robusto** de exceções
 
-- Aplicar conceitos de lógica de programação em Python
-- Desenvolver habilidades em manipulação e análise de dados
-- Implementar estruturas de controle e funções
-- Trabalhar com bibliotecas externas (pandas, kagglehub)
-- Criar soluções para problemas reais de análise de dados
+## 🚀 Como usar
 
-## Funcionalidades Implementadas
+```bash
+# Instalar dependência
+pip install kagglehub
 
-### 1. Sistema de Análise de E-commerce
-- Carregamento e tratamento de dados de vendas online
-- Cálculo de receita total
-- Análise de produtos mais vendidos
-- Filtros por região/país
+# Executar sistema
+python app.py
+```
 
-### 2. Análise de Performance Estudantil
-- Processamento de dados de desempenho escolar
-- Cálculo de médias por disciplina
-- Comparações por gênero
-- Análise de correlações entre disciplinas
+## 🏗️ Arquitetura
 
-### 3. Sistema de Análise Walmart
-- Processamento de dados de vendas semanais
-- Ranking de performance por loja
-- Análise temporal de vendas
-- Cálculos de receita total e média
+### Classes principais
+- **`DataStructure`**: Organiza dados em estruturas adequadas
+- **`EcommerceCRUD`**: Operações CRUD completas
+- **`RelatoriosAnalytics`**: Relatórios e análises
+- **`ExportadorCSV`**: Exportação de arquivos
+- **`EcommerceSystem`**: Interface principal
 
+### Estruturas de dados
+- **Listas**: Vendas ordenadas e indexadas
+- **Dicionários**: Acesso rápido por chave (produtos, clientes)
+- **Tuplas**: Metadados imutáveis (colunas)
+- **Contadores**: Estatísticas automáticas
 
-## Tecnologias Utilizadas
+## � Operações CRUD
 
-- **Python 3.x**: Linguagem principal
-- **Pandas**: Manipulação de dados
-- **KaggleHub**: Acesso a datasets
-- **Jupyter Notebook**: Desenvolvimento interativo
+```python
+# Criar nova venda
+sistema.crud.criar_venda(dados_venda)
 
+# Buscar venda por fatura
+venda = sistema.crud.buscar_venda_por_invoice('123456')
 
-## Conceitos de Programação Aplicados
+# Atualizar venda existente
+sistema.crud.atualizar_venda('123456', novos_dados)
 
-### Estruturas de Dados
-- Listas e dicionários para organização de dados
-- DataFrames do pandas para análise estruturada
+# Deletar venda
+sistema.crud.deletar_venda('123456')
+```
 
-### Estruturas de Controle
-- Loops para processamento de dados
-- Condicionais para filtros e validações
-- Tratamento de exceções
+## 📊 Relatórios disponíveis
 
-### Funções e Modularização
-- Funções para cálculos específicos
-- Reutilização de código
-- Organização modular do projeto
+- Médias gerais (receita, quantidade, preços)
+- Ranking de produtos mais vendidos
+- Ranking de países por vendas
+- Filtros por faixa de valor
+- Análise detalhada por país
 
-### Manipulação de Arquivos
-- Leitura de arquivos CSV
-- Processamento de dados externos
-- Integração com APIs (KaggleHub)
+## 📁 Estrutura do projeto
 
-## Resultados Esperados
+```
+LMS_ADA/
+├── app.py                    # Sistema principal
+├── README.MD                 # Esta documentação
+└── documentacao/
+    ├── Dataset_Projeto_Análise_Inicial_pandas_&_kagglehub.ipynb
+    ├── Paleta_Cores.pdf
+    └── Projeto_Lógica de Programação_II.pdf
+```
 
-O projeto demonstra a aplicação prática de:
-- ✅ Conceitos fundamentais de programação Python
-- ✅ Manipulação eficiente de dados
-- ✅ Implementação de algoritmos de análise
-- ✅ Boas práticas de desenvolvimento
-- ✅ Documentação e organização de código
+## ✅ Requisitos atendidos
 
-## Critérios de Avaliação
-
-- **Funcionalidade**: Implementação correta das análises
-- **Código**: Qualidade, organização e boas práticas
-- **Lógica**: Aplicação adequada dos conceitos aprendidos
-- **Documentação**: Clareza na explicação do projeto
-- **Resultados**: Precisão das análises realizadas
-
-## Entrega
-
-Este projeto representa a aplicação prática dos conhecimentos adquiridos na disciplina de Lógica de Programação II, demonstrando competência em:
-
-1. **Programação Python**: Sintaxe, estruturas e paradigmas
-2. **Resolução de Problemas**: Análise e implementação de soluções
-3. **Manipulação de Dados**: Processamento e análise de informações
-4. **Documentação**: Organização e apresentação do trabalho
+- [x] Estruturas de dados organizadas (listas, tuplas, dicionários)
+- [x] CRUD básico em memória
+- [x] Relatórios e análises completas
+- [x] Exportação CSV
+- [x] Tratamento de exceções
 
 ---
 
-**Disciplina**: Lógica de Programação II  
-**Instituição**: ADA  
-**Data**: Setembro 2025
+**ADA Tech - Lógica de Programação II | Outubro 2025**
