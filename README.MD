@@ -51,34 +51,10 @@ sistema.crud.atualizar_venda('123456', novos_dados)
 sistema.crud.deletar_venda('123456')
 ```
 
-## 📊 Relatórios disponíveis
 
-- Médias gerais (receita, quantidade, preços)
-- Ranking de produtos mais vendidos
-- Ranking de países por vendas
-- Filtros por faixa de valor
-- Análise detalhada por país
 
-## 📁 Estrutura do projeto
 
-```
-LMS_ADA/
-├── app.py                    # Sistema principal
-├── README.MD                 # Esta documentação
-└── documentacao/
-    ├── Dataset_Projeto_Análise_Inicial_pandas_&_kagglehub.ipynb
-    ├── Paleta_Cores.pdf
-    └── Projeto_Lógica de Programação_II.pdf
-```
-
-## ✅ Requisitos atendidos
-
-- [x] Estruturas de dados organizadas (listas, tuplas, dicionários)
-- [x] CRUD básico em memória
-- [x] Relatórios e análises completas
-- [x] Exportação CSV
-- [x] Tratamento de exceções
-
----
 
 **ADA Tech - Lógica de Programação II | Outubro 2025**
+
+
